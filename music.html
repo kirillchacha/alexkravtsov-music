@@ -5,13 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Alex Kravtsov - Music</title>
-		<script type="module" crossorigin="" src="./js/music.min.js?v=1787607246813"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1787607246813">
-		<link rel="modulepreload" crossorigin="" href="./js/button.min.js?v=1787607246813">
-		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1787607246813">
-		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1787607246813">
-		<link rel="stylesheet" crossorigin="" href="./css/music.min.css?v=1787607246813">
-		<link rel="stylesheet" crossorigin="" href="./css/inner.min.css?v=1787607246813">
+		<script type="module" crossorigin="" src="./js/music.min.js?v=1787607963630"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1787607963630">
+		<link rel="modulepreload" crossorigin="" href="./js/button.min.js?v=1787607963630">
+		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1787607963630">
+		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1787607963630">
+		<link rel="stylesheet" crossorigin="" href="./css/music.min.css?v=1787607963630">
+		<link rel="stylesheet" crossorigin="" href="./css/inner.min.css?v=1787607963630">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -105,19 +105,31 @@
 							<div class="musiccategories__grid">
 								<a href="orchestral-music.html" class="musiccategories__card">
 									<div class="musiccategories__card-image">
-										<img src="https://images.unsplash.com/photo-1571299803548-831c31e293e7?w=800&q=80&auto=format&fit=crop" alt="Orchestra performance" loading="lazy">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/bio/intro-2-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/bio/intro-2-1200.webp" type="image/webp">
+											<img alt="Orchestra performance" loading="lazy" src="./assets/img/bio/intro-2.webp">
+										</picture>
 									</div>
 									<div class="musiccategories__card-title">Orchestral music</div>
 								</a>
 								<a href="piano-music.html" class="musiccategories__card">
 									<div class="musiccategories__card-image">
-										<img src="https://images.unsplash.com/photo-1679759812254-e56df274813a?w=800&q=80&auto=format&fit=crop" alt="Hands playing piano" loading="lazy">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/music/piano-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/music/piano-1200.webp" type="image/webp">
+											<img alt="Hands playing piano" loading="lazy" src="./assets/img/music/piano.webp">
+										</picture>
 									</div>
 									<div class="musiccategories__card-title">Piano music</div>
 								</a>
 								<a href="relaxing-music.html" class="musiccategories__card">
 									<div class="musiccategories__card-image">
-										<img src="https://images.unsplash.com/photo-1777836439057-f80dbde5703c?w=800&q=80&auto=format&fit=crop" alt="Piano keys at sunset" loading="lazy">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/music/relaxing-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/music/relaxing-1200.webp" type="image/webp">
+											<img alt="Piano keys at sunset" loading="lazy" src="./assets/img/music/relaxing.webp">
+										</picture>
 									</div>
 									<div class="musiccategories__card-title">Relaxing music</div>
 								</a>

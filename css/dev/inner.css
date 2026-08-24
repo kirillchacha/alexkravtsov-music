@@ -4,12 +4,12 @@
     padding-top: 3.75rem;
   }
 }
-@media (min-width: 20em) and (max-width: 75em) {
+@media (min-width: 20em) and (max-width: 119.375em) {
   .inner {
-    padding-top: clamp( 3.75rem , 3.40909090909375rem  +  1.7045454545vw , 4.6875rem );
+    padding-top: clamp( 3.75rem , 3.56132075471875rem  +  0.9433962264vw , 4.6875rem );
   }
 }
-@media (min-width: 75em) {
+@media (min-width: 119.375em) {
   .inner {
     padding-top: 4.6875rem;
   }

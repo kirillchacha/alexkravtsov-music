@@ -1,0 +1,1 @@
+img[loading=lazy]{opacity:0;transition:opacity .5s ease}img[loading=lazy].--loaded{opacity:1}

@@ -1,4 +1,5 @@
-import { t as uniqArray } from "./button.min.js";
+import "./button.min.js";
+import { l as uniqArray } from "./common.min.js";
 //#region src/components/effects/watcher/watcher.js
 var ScrollWatcher = class {
 	constructor(props) {

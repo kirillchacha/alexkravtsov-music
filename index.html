@@ -4,11 +4,13 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<title>Alex Kravtsov - Musuc</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1787601056439"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/button.min.js?v=1787601056439">
-		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1787601056439">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1787601056439">
+		<title>Alex Kravtsov - Music</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1787607246813"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1787607246813">
+		<link rel="modulepreload" crossorigin="" href="./js/button.min.js?v=1787607246813">
+		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1787607246813">
+		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1787607246813">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1787607246813">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -24,13 +26,13 @@
 							<nav class="menu__body">
 								<ul class="menu__list">
 									<li class="menu__item">
-										<a href="#" class="menu__link menu__link--active menu__link--no-sub-menu">Home</a>
+										<a href="index.html" class="menu__link menu__link--active menu__link--no-sub-menu">Home</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link menu__link--no-sub-menu">BIO</a>
+										<a href="bio.html" class="menu__link menu__link--no-sub-menu">BIO</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link menu__link--sub-menu">Music</a>
+										<a href="music.html" class="menu__link menu__link--sub-menu">Music</a>
 										<span class="menu__arrow-submenu _icon-arrow-select"></span>
 										<ul class="sub-menu__list">
 											<li class="sub-menu__item">
@@ -47,10 +49,13 @@
 										</ul>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link menu__link--no-sub-menu">Blog</a>
+										<a href="massmedia.html" class="menu__link menu__link--no-sub-menu">Mass Media</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link menu__link--no-sub-menu">Scores</a>
+										<a href="blog.html" class="menu__link menu__link--no-sub-menu">Blog</a>
+									</li>
+									<li class="menu__item">
+										<a href="scores.html" class="menu__link menu__link--no-sub-menu">Scores</a>
 									</li>
 								</ul>
 							</nav>
@@ -108,13 +113,15 @@
 				<section data-fls-homebio="" class="page__homebio homebio">
 					<div class="homebio__container">
 						<div class="homebio__left">
-							<div class="homebio__image">[Photo]</div>
+							<div class="homebio__image">
+								<img src="https://images.unsplash.com/photo-1574396883367-ead75a1abde8?w=1000&q=80&auto=format&fit=crop" alt="Alex Kravtsov at the piano" loading="lazy">
+							</div>
 						</div>
 						<div class="homebio__right">
 							<p class="homebio__text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-				ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								Alex Kravtsov is a composer and pianist whose work moves between full
+				orchestral scores and quiet, intimate piano pieces. Rooted in a lifelong devotion to music, his
+				compositions have found their way into concert halls, film, and everyday moments of reflection.
 							</p>
 							<a href="bio.html" data-fls-button="" class="homebio__more button button--yellow-brown button--radius">More</a>
 						</div>
@@ -136,28 +143,40 @@
 						<div class="massmedia-page__items">
 							<div class="massmedia-page__item">
 								<div class="massmedia-card">
-									<div class="massmedia-card__image">[Photo]</div>
+									<div class="massmedia-card__image">
+										<img src="https:/images.unsplash.com/photo-1581548708095-7158f2e63857?w=800&amp;q=80&amp;auto=format&amp;fit=crop" alt="Radio microphone" loading="lazy">
+									</div>
 									<div class="massmedia-card__content">
-										<a href="#" class="massmedia-card__headline">Text</a>
-										<p class="massmedia-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+										<a href="#" class="massmedia-card__headline">Interview on National Radio</a>
+										<p class="massmedia-card__text">
+											Alex sat down for a conversation about his creative process and what is next in his musical journey.
+										</p>
 									</div>
 								</div>
 							</div>
 							<div class="massmedia-page__item">
 								<div class="massmedia-card">
-									<div class="massmedia-card__image">[Photo]</div>
+									<div class="massmedia-card__image">
+										<img src="https:/images.unsplash.com/photo-1668605335684-c97ce92cbd76?w=800&amp;q=80&amp;auto=format&amp;fit=crop" alt="Vintage studio microphone" loading="lazy">
+									</div>
 									<div class="massmedia-card__content">
-										<a href="#" class="massmedia-card__headline">Text</a>
-										<p class="massmedia-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+										<a href="#" class="massmedia-card__headline">Featured in Music Magazine</a>
+										<p class="massmedia-card__text">
+											A feature piece exploring how Alex blends orchestral tradition with contemporary sound.
+										</p>
 									</div>
 								</div>
 							</div>
 							<div class="massmedia-page__item">
 								<div class="massmedia-card">
-									<div class="massmedia-card__image">[Photo]</div>
+									<div class="massmedia-card__image">
+										<img src="https:/images.unsplash.com/photo-1554200876-907f9286c2a1?w=800&amp;q=80&amp;auto=format&amp;fit=crop" alt="Recording studio mixing desk" loading="lazy">
+									</div>
 									<div class="massmedia-card__content">
-										<a href="#" class="massmedia-card__headline">Text</a>
-										<p class="massmedia-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+										<a href="#" class="massmedia-card__headline">Live Performance Highlights</a>
+										<p class="massmedia-card__text">
+											Highlights from a recent live performance, captured and shared across local media outlets.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -167,46 +186,55 @@
 				<section data-fls-blogsection="" class="page__blog blog-page">
 					<div class="blog-page__container">
 						<div class="blog-page__headline-block">
-							<h2 class="blog-page__headline">Блог</h2>
+							<h2 class="blog-page__headline">Blog</h2>
 						</div>
 						<div class="blog-page__items">
 							<div class="blog-page__item">
 								<div data-fls-blogcard="" class="blog-card">
-									<div class="blog-card__bg">
+									<div class="blog-card__image">
 										<picture>
 											<source media="(max-width: 600px)" srcset="./assets/img/blog/Kravtsoff-600.webp" type="image/webp">
-											<img class="blog-card__image ibg" alt="Image" src="./assets/img/blog/Kravtsoff.webp">
+											<img alt="Alex Kravtsov in the studio" loading="lazy" src="./assets/img/blog/Kravtsoff.webp">
 										</picture>
 									</div>
 									<div class="blog-card__content">
 										<div class="blog-card__date">12.03.2025</div>
-										<a href="#" class="blog-card__headline">Text</a>
+										<a href="blog.html" class="blog-card__headline">Behind the Scenes of My Latest Recording</a>
+										<p class="blog-card__text">
+											A look at what goes into preparing and recording a new orchestral piece, from first sketches to the final take.
+										</p>
 									</div>
 								</div>
 							</div>
 							<div class="blog-page__item">
 								<div data-fls-blogcard="" class="blog-card">
-									<div class="blog-card__bg">
+									<div class="blog-card__image">
 										<picture>
-											<img class="blog-card__image ibg" alt="Image" src="./assets/img/blog/bd-draga-mama.webp">
+											<img alt="Alex Kravtsov on stage" loading="lazy" src="./assets/img/blog/bd-draga-mama.webp">
 										</picture>
 									</div>
 									<div class="blog-card__content">
-										<div class="blog-card__date">12.03.2025</div>
-										<a href="#" class="blog-card__headline">Text</a>
+										<div class="blog-card__date">05.02.2025</div>
+										<a href="blog.html" class="blog-card__headline">On Practicing Every Day</a>
+										<p class="blog-card__text">
+											Some thoughts on discipline, repetition, and why consistent practice matters more than motivation.
+										</p>
 									</div>
 								</div>
 							</div>
 							<div class="blog-page__item">
 								<div data-fls-blogcard="" class="blog-card">
-									<div class="blog-card__bg">
+									<div class="blog-card__image">
 										<picture>
-											<img class="blog-card__image ibg" alt="Image" src="./assets/img/blog/mqdefault.webp">
+											<img alt="Alex Kravtsov portrait" loading="lazy" src="./assets/img/blog/mqdefault.webp">
 										</picture>
 									</div>
 									<div class="blog-card__content">
-										<div class="blog-card__date">12.03.2025</div>
-										<a href="#" class="blog-card__headline">Text</a>
+										<div class="blog-card__date">18.01.2025</div>
+										<a href="blog.html" class="blog-card__headline">A Journey Through Classical Music</a>
+										<p class="blog-card__text">
+											Reflecting on the composers and performances that shaped the way I hear and write music today.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -226,27 +254,27 @@
 								</a>
 								<ul class="top-footer__list-social">
 									<li class="top-footer__item-social">
-										<a href="#" class="top-footer__link-social">
+										<a href="https://facebook.com" class="top-footer__link-social">
 											<img class="top-footer__image-social top-footer__image-social--facebook ibg" src="./assets/img/social/facebook-2.svg" alt="facebook">
 										</a>
 									</li>
 									<li class="top-footer__item-social">
-										<a href="#" class="top-footer__link-social">
+										<a href="https://tiktok.com" class="top-footer__link-social">
 											<img class="top-footer__image-social top-footer__image-social--tiktok ibg" src="./assets/img/social/tiktok-2.svg" alt="tiktok">
 										</a>
 									</li>
 									<li class="top-footer__item-social">
-										<a href="#" class="top-footer__link-social">
+										<a href="https://vk.com" class="top-footer__link-social">
 											<img class="top-footer__image-social top-footer__image-social--vk ibg" src="./assets/img/social/vk-2.svg" alt="vk">
 										</a>
 									</li>
 									<li class="top-footer__item-social">
-										<a href="#" class="top-footer__link-social">
+										<a href="https://instagram.com" class="top-footer__link-social">
 											<img class="top-footer__image-social top-footer__image-social--instagram ibg" src="./assets/img/social/instagram-2.svg" alt="instagram">
 										</a>
 									</li>
 									<li class="top-footer__item-social">
-										<a href="#" class="top-footer__link-social">
+										<a href="https://x.com" class="top-footer__link-social">
 											<img class="top-footer__image-social top-footer__image-social--twitter ibg" src="./assets/img/social/twitter-x.svg" alt="twitter-x">
 										</a>
 									</li>
@@ -261,19 +289,22 @@
 												<nav class="menu-footer__body">
 													<ul class="menu-footer__list">
 														<li class="menu-footer__item">
-															<a href="#" class="menu-footer__link">Home</a>
+															<a href="index.html" class="menu-footer__link">Home</a>
 														</li>
 														<li class="menu-footer__item">
-															<a href="#" class="menu-footer__link">BIO</a>
+															<a href="bio.html" class="menu-footer__link">BIO</a>
 														</li>
 														<li class="menu-footer__item">
-															<a href="#" class="menu-footer__link">Music</a>
+															<a href="music.html" class="menu-footer__link">Music</a>
 														</li>
 														<li class="menu-footer__item">
-															<a href="#" class="menu-footer__link">Blog</a>
+															<a href="massmedia.html" class="menu-footer__link">Mass Media</a>
 														</li>
 														<li class="menu-footer__item">
-															<a href="#" class="menu-footer__link">Scores</a>
+															<a href="blog.html" class="menu-footer__link">Blog</a>
+														</li>
+														<li class="menu-footer__item">
+															<a href="scores.html" class="menu-footer__link">Scores</a>
 														</li>
 													</ul>
 												</nav>

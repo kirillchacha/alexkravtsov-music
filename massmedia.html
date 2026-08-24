@@ -5,10 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Alex Kravtsov - Mass Media</title>
-		<script type="module" crossorigin="" src="./js/button.min.js?v=1787601056438"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1787601056438">
-		<link rel="stylesheet" crossorigin="" href="./css/inner.min.css?v=1787601056438">
-		<link rel="stylesheet" crossorigin="" href="./css/postlist.min.css?v=1787601056438">
+		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1787607246814">
+		<script type="module" crossorigin="" src="./js/button.min.js?v=1787607246814"></script>
+		<script type="module" crossorigin="" src="./js/gallery.min.js?v=1787607246814"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1787607246814">
+		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1787607246814">
+		<link rel="stylesheet" crossorigin="" href="./css/gallery.min.css?v=1787607246814">
+		<link rel="stylesheet" crossorigin="" href="./css/inner.min.css?v=1787607246814">
+		<link rel="stylesheet" crossorigin="" href="./css/postlist.min.css?v=1787607246814">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -24,13 +28,13 @@
 							<nav class="menu__body">
 								<ul class="menu__list">
 									<li class="menu__item">
-										<a href="#" class="menu__link menu__link--no-sub-menu">Home</a>
+										<a href="index.html" class="menu__link menu__link--no-sub-menu">Home</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link menu__link--no-sub-menu">BIO</a>
+										<a href="bio.html" class="menu__link menu__link--no-sub-menu">BIO</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link menu__link--sub-menu">Music</a>
+										<a href="music.html" class="menu__link menu__link--sub-menu">Music</a>
 										<span class="menu__arrow-submenu _icon-arrow-select"></span>
 										<ul class="sub-menu__list">
 											<li class="sub-menu__item">
@@ -47,10 +51,13 @@
 										</ul>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link menu__link--no-sub-menu">Blog</a>
+										<a href="massmedia.html" class="menu__link menu__link--active menu__link--no-sub-menu">Mass Media</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link menu__link--no-sub-menu">Scores</a>
+										<a href="blog.html" class="menu__link menu__link--no-sub-menu">Blog</a>
+									</li>
+									<li class="menu__item">
+										<a href="scores.html" class="menu__link menu__link--no-sub-menu">Scores</a>
 									</li>
 								</ul>
 							</nav>
@@ -91,40 +98,52 @@
 					<section data-fls-postlist="" class="page__postlist postlist">
 						<div class="postlist__container">
 							<h1 class="postlist__headline">Mass Media</h1>
-							<div class="postlist__items">
+							<div class="postlist__items" data-fls-gallery="">
 								<article class="postlist__item">
-									<div class="postlist__image">[Photo]</div>
+									<div class="postlist__image">
+										<a class="js-gallery-item" href="https:/images.unsplash.com/photo-1581548708095-7158f2e63857?w=800&amp;q=80&amp;auto=format&amp;fit=crop">
+											<img src="https:/images.unsplash.com/photo-1581548708095-7158f2e63857?w=800&amp;q=80&amp;auto=format&amp;fit=crop" alt="Radio microphone" loading="lazy">
+										</a>
+									</div>
 									<div class="postlist__content">
 										<div class="postlist__date">12.03.2025</div>
 										<h2 class="postlist__title">
-											<a href="#" class="postlist__link">Title</a>
+											<a href="#" class="postlist__link">Interview on National Radio</a>
 										</h2>
 										<p class="postlist__text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+											Alex sat down for a conversation about his creative process, his approach to composition, and what is next in his musical journey.
 										</p>
 									</div>
 								</article>
 								<article class="postlist__item">
-									<div class="postlist__image">[Photo]</div>
+									<div class="postlist__image">
+										<a class="js-gallery-item" href="https:/images.unsplash.com/photo-1668605335684-c97ce92cbd76?w=800&amp;q=80&amp;auto=format&amp;fit=crop">
+											<img src="https:/images.unsplash.com/photo-1668605335684-c97ce92cbd76?w=800&amp;q=80&amp;auto=format&amp;fit=crop" alt="Vintage studio microphone" loading="lazy">
+										</a>
+									</div>
 									<div class="postlist__content">
 										<div class="postlist__date">05.02.2025</div>
 										<h2 class="postlist__title">
-											<a href="#" class="postlist__link">Title</a>
+											<a href="#" class="postlist__link">Featured in Music Magazine</a>
 										</h2>
 										<p class="postlist__text">
-											Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											A feature piece exploring how Alex blends orchestral tradition with contemporary sound design in his recent work.
 										</p>
 									</div>
 								</article>
 								<article class="postlist__item">
-									<div class="postlist__image">[Photo]</div>
+									<div class="postlist__image">
+										<a class="js-gallery-item" href="https:/images.unsplash.com/photo-1554200876-907f9286c2a1?w=800&amp;q=80&amp;auto=format&amp;fit=crop">
+											<img src="https:/images.unsplash.com/photo-1554200876-907f9286c2a1?w=800&amp;q=80&amp;auto=format&amp;fit=crop" alt="Recording studio mixing desk" loading="lazy">
+										</a>
+									</div>
 									<div class="postlist__content">
 										<div class="postlist__date">18.01.2025</div>
 										<h2 class="postlist__title">
-											<a href="#" class="postlist__link">Title</a>
+											<a href="#" class="postlist__link">Live Performance Highlights</a>
 										</h2>
 										<p class="postlist__text">
-											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+											Highlights from a recent live performance, captured and shared across local media outlets.
 										</p>
 									</div>
 								</article>
@@ -150,27 +169,27 @@
 								</a>
 								<ul class="top-footer__list-social">
 									<li class="top-footer__item-social">
-										<a href="#" class="top-footer__link-social">
+										<a href="https://facebook.com" class="top-footer__link-social">
 											<img class="top-footer__image-social top-footer__image-social--facebook ibg" src="./assets/img/social/facebook-2.svg" alt="facebook">
 										</a>
 									</li>
 									<li class="top-footer__item-social">
-										<a href="#" class="top-footer__link-social">
+										<a href="https://tiktok.com" class="top-footer__link-social">
 											<img class="top-footer__image-social top-footer__image-social--tiktok ibg" src="./assets/img/social/tiktok-2.svg" alt="tiktok">
 										</a>
 									</li>
 									<li class="top-footer__item-social">
-										<a href="#" class="top-footer__link-social">
+										<a href="https://vk.com" class="top-footer__link-social">
 											<img class="top-footer__image-social top-footer__image-social--vk ibg" src="./assets/img/social/vk-2.svg" alt="vk">
 										</a>
 									</li>
 									<li class="top-footer__item-social">
-										<a href="#" class="top-footer__link-social">
+										<a href="https://instagram.com" class="top-footer__link-social">
 											<img class="top-footer__image-social top-footer__image-social--instagram ibg" src="./assets/img/social/instagram-2.svg" alt="instagram">
 										</a>
 									</li>
 									<li class="top-footer__item-social">
-										<a href="#" class="top-footer__link-social">
+										<a href="https://x.com" class="top-footer__link-social">
 											<img class="top-footer__image-social top-footer__image-social--twitter ibg" src="./assets/img/social/twitter-x.svg" alt="twitter-x">
 										</a>
 									</li>
@@ -185,19 +204,22 @@
 												<nav class="menu-footer__body">
 													<ul class="menu-footer__list">
 														<li class="menu-footer__item">
-															<a href="#" class="menu-footer__link">Home</a>
+															<a href="index.html" class="menu-footer__link">Home</a>
 														</li>
 														<li class="menu-footer__item">
-															<a href="#" class="menu-footer__link">BIO</a>
+															<a href="bio.html" class="menu-footer__link">BIO</a>
 														</li>
 														<li class="menu-footer__item">
-															<a href="#" class="menu-footer__link">Music</a>
+															<a href="music.html" class="menu-footer__link">Music</a>
 														</li>
 														<li class="menu-footer__item">
-															<a href="#" class="menu-footer__link">Blog</a>
+															<a href="massmedia.html" class="menu-footer__link">Mass Media</a>
 														</li>
 														<li class="menu-footer__item">
-															<a href="#" class="menu-footer__link">Scores</a>
+															<a href="blog.html" class="menu-footer__link">Blog</a>
+														</li>
+														<li class="menu-footer__item">
+															<a href="scores.html" class="menu-footer__link">Scores</a>
 														</li>
 													</ul>
 												</nav>

@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Alex Kravtsov - Music</title>
+		<script type="module" crossorigin="" src="./js/button.min.js?v=1787601056438"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1787601056438">
+		<link rel="stylesheet" crossorigin="" href="./css/music.min.css?v=1787601056438">
+		<link rel="stylesheet" crossorigin="" href="./css/inner.min.css?v=1787601056438">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" data-fls-header-scroll="20" data-fls-header-scroll-show="" class="header">
+				<div class="header__container">
+					<div class="header__content">
+						<a href="index.html" class="header__logo">
+							<picture>
+								<img alt="logo" src="./assets/img/logo-dark.webp">
+							</picture>
+						</a>
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#" class="menu__link menu__link--no-sub-menu">Home</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link menu__link--no-sub-menu">BIO</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link menu__link--active menu__link--sub-menu">Music</a>
+										<span class="menu__arrow-submenu _icon-arrow-select"></span>
+										<ul class="sub-menu__list">
+											<li class="sub-menu__item">
+												<a href="orchestral-music.html" class="sub-menu__link">Orchestral
+										music</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="piano-music.html" class="sub-menu__link">Piano music</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="relaxing-music.html" class="sub-menu__link">Relaxing
+										music</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link menu__link--no-sub-menu">Blog</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link menu__link--no-sub-menu">Scores</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+						<div class="header__actions actions-header">
+							<div class="actions-header__language">
+								<ul class="actions-header__list-lang">
+									<li class="actions-header__item-lang">
+										<button type="button" class="actions-header__link-lang">En</button>
+									</li>
+									<li class="actions-header__item-lang">
+										<button type="button" class="actions-header__link-lang">De</button>
+									</li>
+									<li class="actions-header__item-lang">
+										<button type="button" class="actions-header__link-lang">Ro</button>
+									</li>
+								</ul>
+							</div>
+							<div data-da=".menu__body, 480" class="actions-header__button-block">
+								<a data-fls-button="" href="contacts.html" class="actions-header__button button button--dark-grey button--radius">Contact
+						us</a>
+							</div>
+							<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+								<span></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="inner">
+				<main class="page page--music">
+					<section data-fls-musiccategories="" class="page__musiccategories musiccategories">
+						<div class="musiccategories__container">
+							<h1 class="musiccategories__headline">Music</h1>
+							<nav class="musiccategories__nav">
+								<a href="orchestral-music.html" class="musiccategories__nav-link">Orchestral music</a>
+								<a href="piano-music.html" class="musiccategories__nav-link">Piano music</a>
+								<a href="relaxing-music.html" class="musiccategories__nav-link">Relaxing music</a>
+							</nav>
+							<div class="musiccategories__grid">
+								<a href="orchestral-music.html" class="musiccategories__card">
+									<div class="musiccategories__card-image">[Photo]</div>
+									<div class="musiccategories__card-title">Orchestral music</div>
+								</a>
+								<a href="piano-music.html" class="musiccategories__card">
+									<div class="musiccategories__card-image">[Photo]</div>
+									<div class="musiccategories__card-title">Piano music</div>
+								</a>
+								<a href="relaxing-music.html" class="musiccategories__card">
+									<div class="musiccategories__card-image">[Photo]</div>
+									<div class="musiccategories__card-title">Relaxing music</div>
+								</a>
+							</div>
+						</div>
+					</section>
+					<section data-fls-musiclist="" class="page__musiclist musiclist">
+						<div class="musiclist__container">
+							<div class="musiclist__tabs">
+								<a href="orchestral-music.html" class="musiclist__tab musiclist__tab--active">Orchestral music</a>
+								<a href="piano-music.html" class="musiclist__tab">Piano music</a>
+								<a href="relaxing-music.html" class="musiclist__tab">Relaxing music</a>
+							</div>
+							<div class="musiclist__items">
+								<div class="musiclist__item">
+									<div class="musiclist__video">[YouTube embed]</div>
+									<div class="musiclist__content">
+										<h3 class="musiclist__headline">Title</h3>
+										<p class="musiclist__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										</p>
+									</div>
+								</div>
+								<div class="musiclist__item">
+									<div class="musiclist__video">[YouTube embed]</div>
+									<div class="musiclist__content">
+										<h3 class="musiclist__headline">Title</h3>
+										<p class="musiclist__text">
+											Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										</p>
+									</div>
+								</div>
+								<div class="musiclist__item">
+									<div class="musiclist__video">[YouTube embed]</div>
+									<div class="musiclist__content">
+										<h3 class="musiclist__headline">Title</h3>
+										<p class="musiclist__text">
+											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+			</div>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__top top-footer">
+					<div class="top-footer__container">
+						<div class="top-footer__content">
+							<div class="top-footer__column">
+								<a href="index.html" class="top-footer__logo">
+									<picture>
+										<img alt="Logo" src="./assets/img/logo-dark.webp">
+									</picture>
+								</a>
+								<ul class="top-footer__list-social">
+									<li class="top-footer__item-social">
+										<a href="#" class="top-footer__link-social">
+											<img class="top-footer__image-social top-footer__image-social--facebook ibg" src="./assets/img/social/facebook-2.svg" alt="facebook">
+										</a>
+									</li>
+									<li class="top-footer__item-social">
+										<a href="#" class="top-footer__link-social">
+											<img class="top-footer__image-social top-footer__image-social--tiktok ibg" src="./assets/img/social/tiktok-2.svg" alt="tiktok">
+										</a>
+									</li>
+									<li class="top-footer__item-social">
+										<a href="#" class="top-footer__link-social">
+											<img class="top-footer__image-social top-footer__image-social--vk ibg" src="./assets/img/social/vk-2.svg" alt="vk">
+										</a>
+									</li>
+									<li class="top-footer__item-social">
+										<a href="#" class="top-footer__link-social">
+											<img class="top-footer__image-social top-footer__image-social--instagram ibg" src="./assets/img/social/instagram-2.svg" alt="instagram">
+										</a>
+									</li>
+									<li class="top-footer__item-social">
+										<a href="#" class="top-footer__link-social">
+											<img class="top-footer__image-social top-footer__image-social--twitter ibg" src="./assets/img/social/twitter-x.svg" alt="twitter-x">
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="top-footer__column">
+								<div data-fls-spollers="767.98,max" class="top-footer__spollers">
+									<details class="top-footer__item">
+										<summary class="top-footer__title">Visit</summary>
+										<div class="top-footer__body">
+											<div class="top-footer__menu menu-footer">
+												<nav class="menu-footer__body">
+													<ul class="menu-footer__list">
+														<li class="menu-footer__item">
+															<a href="#" class="menu-footer__link">Home</a>
+														</li>
+														<li class="menu-footer__item">
+															<a href="#" class="menu-footer__link">BIO</a>
+														</li>
+														<li class="menu-footer__item">
+															<a href="#" class="menu-footer__link">Music</a>
+														</li>
+														<li class="menu-footer__item">
+															<a href="#" class="menu-footer__link">Blog</a>
+														</li>
+														<li class="menu-footer__item">
+															<a href="#" class="menu-footer__link">Scores</a>
+														</li>
+													</ul>
+												</nav>
+											</div>
+										</div>
+									</details>
+								</div>
+							</div>
+							<div class="top-footer__column">
+								<div data-fls-spollers="767.98,max" class="top-footer__spollers">
+									<details class="top-footer__item">
+										<summary class="top-footer__title">Newsletter</summary>
+										<div class="top-footer__body">
+											<div class="top-footer__parahraph">
+												<p class="top-footer__text">Text</p>
+											</div>
+											<!-- <include src="@components"></include> -->
+											<!--
+<form class="top-footer__form form-newsletter" action="#">
+<input data-required="email" autocomplete="off" type="text" name="form[email]"
+data-error="Error" placeholder="E-mail" class="form-newsletter__input input">
+<button type="submit" class="form-newsletter__button button">Submit</button>
+</form>
+-->
+										</div>
+									</details>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__container">
+						<div class="bottom-footer__content">
+							<div class="bottom-footer__copy">© Copyright - Alex Kravtsov</div>
+							<a href="privacy-policy.html" class="bottom-footer__privacy">Privacy Policy</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

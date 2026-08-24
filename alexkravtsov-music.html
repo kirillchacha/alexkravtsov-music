@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ua">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="noindex, nofollow">
+		<title>Proiect: alexkravtsov-music</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,500,600,700&display=swap" rel="stylesheet">
+		<style>
+			:root {
+			--color-1: #fff;
+			--color-2: #f5f5f5;
+			--color-3: #596374;
+			--color-4: #c39e80;
+			--color-7: #505968;
+			--color-8: rgb(131, 176, 183);
+			--color-9: #2b2b2b;
+		}
+
+		*,
+		*::before,
+		*::after {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		ul li {
+			list-style: none;
+		}
+
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		body,
+		html {
+			height: 100%;
+		}
+
+		body {
+			font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+			background-color: var(--color-2);
+			color: var(--color-3);
+			letter-spacing: .2px;
+		}
+
+		.wrapper {
+			min-height: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.wrapper>main {
+			flex-grow: 1;
+		}
+
+		/* header */
+		.pp-header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px 30px;
+			background: var(--color-1);
+			border-bottom: 1px solid var(--color-2);
+		}
+
+		.pp-logo {
+			font-size: 18px;
+			font-weight: 700;
+			color: var(--color-3);
+			letter-spacing: .6px;
+			text-transform: uppercase;
+		}
+
+		.pp-logo em {
+			font-style: normal;
+			font-weight: 600;
+			color: var(--color-4);
+			margin-left: 6px;
+		}
+
+		.pp-badge {
+			display: inline-flex;
+			align-items: center;
+			font-size: 12px;
+			font-weight: 600;
+			letter-spacing: .4px;
+			text-transform: uppercase;
+			color: var(--color-1);
+			background: var(--color-3);
+			padding: 6px 12px;
+			border-radius: 20px;
+		}
+
+		/* main */
+		.projectpage {
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 60px 30px 80px;
+		}
+
+		.projectpage__title {
+			font-size: 34px;
+			font-weight: 700;
+			color: var(--color-3);
+			margin-bottom: 10px;
+		}
+
+		.projectpage__intro {
+			font-size: 15px;
+			line-height: 1.5;
+			color: var(--color-7);
+			max-width: 560px;
+			margin-bottom: 40px;
+		}
+
+		.projectpage__sub-title {
+			font-size: 13px;
+			font-weight: 600;
+			letter-spacing: .8px;
+			text-transform: uppercase;
+			color: var(--color-3);
+			margin-bottom: 20px;
+		}
+
+		/* pages list -> card grid */
+		.projectpage__list {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+			gap: 16px;
+		}
+
+		.projectpage__list li {
+			background: var(--color-1);
+			border-radius: 10px;
+			overflow: hidden;
+		}
+
+		.projectpage__list a {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			column-gap: 12px;
+			height: 100%;
+			padding: 20px;
+			font-size: 15px;
+			font-weight: 600;
+			color: var(--color-3);
+			transition: background .2s ease, color .2s ease;
+		}
+
+		.projectpage__list a::after {
+			content: "→";
+			font-weight: 600;
+			color: var(--color-4);
+			transition: transform .2s ease;
+		}
+
+		.projectpage__list a:hover {
+			background: var(--color-4);
+			color: var(--color-1);
+		}
+
+		.projectpage__list a:hover::after {
+			color: var(--color-1);
+			transform: translateX(3px);
+		}
+
+		/* footer */
+		.pp-footer {
+			padding: 20px 30px;
+			font-size: 12px;
+			color: var(--color-7);
+			background: var(--color-1);
+			border-top: 1px solid var(--color-2);
+			text-align: center;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="pp-header">
+				<span class="pp-logo">
+					Alex Kravtsov
+					<em>music</em>
+				</span>
+				<span class="pp-badge">Preview</span>
+			</header>
+			<main class="projectpage">
+				<h1 class="projectpage__title" id="pp-title">alexkravtsov-music</h1>
+				<p class="projectpage__intro">
+					Previzualizare a paginilor site-ului. Fiecare link deschide pagina
+				într-o filă nouă — conținutul și imaginile sunt deocamdată de tip placeholder.
+				</p>
+				<h2 class="projectpage__sub-title">Pagini</h2>
+				<ul class="projectpage__list" id="pp-list">
+					<li>
+						<a target="_blank" href="scores.html">scores</a>
+					</li>
+					<li>
+						<a target="_blank" href="music.html">music</a>
+					</li>
+					<li>
+						<a target="_blank" href="massmedia.html">massmedia</a>
+					</li>
+					<li>
+						<a target="_blank" href="index.html">index</a>
+					</li>
+					<li>
+						<a target="_blank" href="blog.html">blog</a>
+					</li>
+					<li>
+						<a target="_blank" href="bio.html">bio</a>
+					</li>
+				</ul>
+			</main>
+			<footer class="pp-footer" id="pp-footer"></footer>
+		</div>
+		<script>
+      var LABELS = {
+        index: "Home",
+        bio: "Bio",
+        music: "Music",
+        massmedia: "Mass Media",
+        blog: "Blog",
+        scores: "Scores"
+      };
+
+      function prettify(slug) {
+        if (LABELS[slug]) return LABELS[slug];
+        return slug
+          .replace(/[-_]+/g, " ")
+          .replace(/\b\w/g, function (c) {
+            return c.toUpperCase();
+          });
+      }
+
+      document.querySelectorAll("#pp-list a").forEach(function (link) {
+        var slug = link.textContent.trim();
+        link.textContent = prettify(slug);
+      });
+
+      var title = document.getElementById("pp-title");
+      var raw = title.textContent.replace("Proiect:", "").trim();
+      title.textContent = "Proiect: " + prettify(raw);
+
+      document.getElementById("pp-footer").textContent =
+        "© " + new Date().getFullYear() + " Alex Kravtsov";
+		</script>
+	</body>
+</html>

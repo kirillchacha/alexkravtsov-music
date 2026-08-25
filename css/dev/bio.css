@@ -47,6 +47,12 @@
   transition: transform 0.5s ease, filter 0.5s ease;
   filter: saturate(0.85);
 }
+
+.biohero__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
 .biohero__headline {
   font-weight: 700;
   color: var(--color-3);
@@ -55,15 +61,22 @@
   margin-bottom: 1.875rem;
 }
 .biohero__image {
-  aspect-ratio: 21/9;
+  flex: 1 1 auto;
   width: 100%;
   background: var(--color-2);
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .biohero__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+}
+[data-fls-loaded] .biohero__image {
+  opacity: 1;
+  transform: translateY(0);
 }
 @media (max-width: 47.99875em) {
   .biointro__item {
@@ -88,10 +101,10 @@
     row-gap: 1.875rem;
   }
   .biointro__container {
-    padding-top: 1.875rem;
+    padding-top: 2.5rem;
   }
   .biointro__container {
-    padding-bottom: 1.875rem;
+    padding-bottom: 2.5rem;
   }
   .biointro__text {
     font-size: 0.8125rem;
@@ -100,7 +113,7 @@
     padding-top: 2.5rem;
   }
   .biohero__container {
-    padding-bottom: 1.875rem;
+    padding-bottom: 2.5rem;
   }
   .biohero__headline {
     font-size: 1.75rem;
@@ -111,10 +124,10 @@
     row-gap: clamp( 1.875rem , 1.49764150943125rem  +  1.8867924528vw , 3.75rem );
   }
   .biointro__container {
-    padding-top: clamp( 1.875rem , 1.49764150943125rem  +  1.8867924528vw , 3.75rem );
+    padding-top: clamp( 2.5rem , 2.24842767295625rem  +  1.2578616352vw , 3.75rem );
   }
   .biointro__container {
-    padding-bottom: clamp( 1.875rem , 1.49764150943125rem  +  1.8867924528vw , 3.75rem );
+    padding-bottom: clamp( 2.5rem , 2.24842767295625rem  +  1.2578616352vw , 3.75rem );
   }
   .biointro__text {
     font-size: clamp( 0.8125rem , 0.78734276729375rem  +  0.1257861635vw , 0.9375rem );
@@ -123,7 +136,7 @@
     padding-top: clamp( 2.5rem , 2.24842767295625rem  +  1.2578616352vw , 3.75rem );
   }
   .biohero__container {
-    padding-bottom: clamp( 1.875rem , 1.749213836475rem  +  0.6289308176vw , 2.5rem );
+    padding-bottom: clamp( 2.5rem , 2.24842767295625rem  +  1.2578616352vw , 3.75rem );
   }
   .biohero__headline {
     font-size: clamp( 1.75rem , 1.49842767295625rem  +  1.2578616352vw , 3rem );
@@ -146,7 +159,7 @@
     padding-top: 3.75rem;
   }
   .biohero__container {
-    padding-bottom: 2.5rem;
+    padding-bottom: 3.75rem;
   }
   .biohero__headline {
     font-size: 3rem;

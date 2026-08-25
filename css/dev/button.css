@@ -500,8 +500,10 @@ body {
 
 .form-newsletter {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   column-gap: 0.625rem;
+  row-gap: 0.375rem;
 }
 .form-newsletter__input {
   flex: 1 1 auto;
@@ -526,10 +528,11 @@ body {
 }
 
 [data-fls-form-error] {
+  flex-basis: 100%;
   color: #c0392b;
 }
 [data-fls-form-error] {
-  margin-top: 0.375rem;
+  margin-top: 0.125rem;
 }
 
 .bottom-footer {
@@ -745,6 +748,7 @@ textarea.input {
   }
   .form-newsletter {
     flex-direction: column;
+    align-items: stretch;
     row-gap: 0.625rem;
   }
 }

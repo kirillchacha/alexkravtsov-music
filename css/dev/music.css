@@ -95,19 +95,6 @@
 .musiccategories__headline:not(:last-child) {
   margin-bottom: 1.875rem;
 }
-.musiccategories__nav {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 1.25rem;
-  row-gap: 0.625rem;
-}
-.musiccategories__nav:not(:last-child) {
-  margin-bottom: 1.875rem;
-}
-.musiccategories__nav-link {
-  color: var(--color-3);
-  font-weight: 500;
-}
 .musiccategories__grid {
   display: flex;
   column-gap: 1.25rem;
@@ -185,9 +172,6 @@
   .musiccategories__headline {
     font-size: 1.75rem;
   }
-  .musiccategories__nav-link {
-    font-size: 0.8125rem;
-  }
   .musiccategories__card-title {
     font-size: 1rem;
   }
@@ -228,9 +212,6 @@
   }
   .musiccategories__headline {
     font-size: clamp( 1.75rem , 1.49842767295625rem  +  1.2578616352vw , 3rem );
-  }
-  .musiccategories__nav-link {
-    font-size: clamp( 0.8125rem , 0.78734276729375rem  +  0.1257861635vw , 0.9375rem );
   }
   .musiccategories__card-title {
     font-size: clamp( 1rem , 0.94968553459375rem  +  0.251572327vw , 1.25rem );
@@ -273,9 +254,6 @@
   .musiccategories__headline {
     font-size: 3rem;
   }
-  .musiccategories__nav-link {
-    font-size: 0.9375rem;
-  }
   .musiccategories__card-title {
     font-size: 1.25rem;
   }
@@ -287,9 +265,6 @@
   .musiccategories__card-image:hover img {
     transform: scale(1.08);
     filter: saturate(1.15);
-  }
-  .musiccategories__nav-link:hover {
-    color: var(--color-8);
   }
   .musiccategories__card:hover .musiccategories__card-title {
     color: var(--color-8);

@@ -1,5 +1,5 @@
 import "./button.min.js";
-import { a as setHash, c as slideUp, i as getHash, o as slideDown, r as dataMediaQueries } from "./common.min.js";
+import { i as getHash, l as slideUp, o as setHash, r as dataMediaQueries, s as slideDown } from "./common.min.js";
 /* empty css          */
 //#region src/components/layout/tabs/tabs.js
 function tabs() {

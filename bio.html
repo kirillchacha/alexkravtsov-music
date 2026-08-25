@@ -5,14 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Alex Kravtsov - Bio</title>
-		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1787647929587">
-		<script type="module" crossorigin="" src="./js/button.min.js?v=1787647929587"></script>
-		<script type="module" crossorigin="" src="./js/gallery.min.js?v=1787647929587"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1787647929587">
-		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1787647929587">
-		<link rel="stylesheet" crossorigin="" href="./css/gallery.min.css?v=1787647929587">
-		<link rel="stylesheet" crossorigin="" href="./css/bio.min.css?v=1787647929587">
-		<link rel="stylesheet" crossorigin="" href="./css/inner.min.css?v=1787647929587">
+		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1787652538581">
+		<script type="module" crossorigin="" src="./js/button.min.js?v=1787652538581"></script>
+		<script type="module" crossorigin="" src="./js/gallery.min.js?v=1787652538581"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1787652538581">
+		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1787652538581">
+		<link rel="stylesheet" crossorigin="" href="./css/gallery.min.css?v=1787652538581">
+		<link rel="stylesheet" crossorigin="" href="./css/bio.min.css?v=1787652538581">
+		<link rel="stylesheet" crossorigin="" href="./css/inner.min.css?v=1787652538581">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -262,16 +262,13 @@
 										<summary class="top-footer__title">Newsletter</summary>
 										<div class="top-footer__body">
 											<div class="top-footer__parahraph">
-												<p class="top-footer__text">Text</p>
+												<p class="top-footer__text">Subscribe to get updates on new releases and
+										performances.</p>
 											</div>
-											<!-- <include src="@components"></include> -->
-											<!--
-<form class="top-footer__form form-newsletter" action="#">
-<input data-required="email" autocomplete="off" type="text" name="form[email]"
-data-error="Error" placeholder="E-mail" class="form-newsletter__input input">
-<button type="submit" class="form-newsletter__button button">Submit</button>
-</form>
--->
+											<form data-fls-form="ajax" class="top-footer__form form-newsletter" action="/sendmail" method="POST">
+												<input data-fls-input="" required type="email" name="form[email]" data-fls-form-errtext="Enter a valid e-mail" autocomplete="off" placeholder="E-mail" class="form-newsletter__input input">
+												<button type="submit" class="form-newsletter__button button button--dark-grey button--radius">Submit</button>
+											</form>
 										</div>
 									</details>
 								</div>

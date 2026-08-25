@@ -1,4 +1,11 @@
 //#region src/js/common/functions.js
+function addLoadedAttr() {
+	if (!document.documentElement.hasAttribute("data-fls-preloader-loading")) window.addEventListener("load", function() {
+		setTimeout(function() {
+			document.documentElement.setAttribute("data-fls-loaded", "");
+		}, 0);
+	});
+}
 function getHash() {
 	if (location.hash) return location.hash.replace("#", "");
 }
@@ -139,5 +146,8 @@ function imgRevealInit() {
 	});
 }
 document.addEventListener("DOMContentLoaded", imgRevealInit);
+//#endregion
+//#region src/js/app.js
+addLoadedAttr();
 //#endregion
 export { setHash as a, slideUp as c, getHash as i, uniqArray as l, bodyLockToggle as n, slideDown as o, dataMediaQueries as r, slideToggle as s, bodyLockStatus as t };

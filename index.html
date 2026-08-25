@@ -5,12 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Alex Kravtsov - Music</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1787607963630"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1787607963630">
-		<link rel="modulepreload" crossorigin="" href="./js/button.min.js?v=1787607963630">
-		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1787607963630">
-		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1787607963630">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1787607963630">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1787647929587"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1787647929587">
+		<link rel="modulepreload" crossorigin="" href="./js/button.min.js?v=1787647929587">
+		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1787647929587">
+		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1787647929587">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1787647929587">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -95,7 +95,11 @@
 				<section data-fls-otherhero="" class="page__hero hero-page">
 					<div class="hero-page__container">
 						<div class="hero-page__video-block">
-							<h1 data-fls-watcher="" class="hero-page__headline">Alex Kravtsov</h1>
+							<div class="hero-page__headline">
+								<h1 class="hero-page__headline-text">Alex Kravtsov</h1>
+								<div class="hero-page__curtain hero-page__curtain--left"></div>
+								<div class="hero-page__curtain hero-page__curtain--right"></div>
+							</div>
 							<div class="hero-page__preview">
 								<div class="hero-page__image-block">
 									<picture>
@@ -110,7 +114,7 @@
 						</div>
 					</div>
 				</section>
-				<section data-fls-homebio="" class="page__homebio homebio">
+				<section data-fls-homebio="" data-fls-watcher="" class="page__homebio homebio">
 					<div class="homebio__container">
 						<div class="homebio__left">
 							<div class="homebio__image">
@@ -131,7 +135,7 @@
 						</div>
 					</div>
 				</section>
-				<section data-fls-lastcomposition="" class="page__lastcomposition lastcomposition">
+				<section data-fls-lastcomposition="" data-fls-watcher="" class="page__lastcomposition lastcomposition">
 					<div class="lastcomposition__container">
 						<div class="lastcomposition__headline-block">
 							<h2 class="lastcomposition__headline">Latest Composition</h2>
@@ -139,7 +143,75 @@
 						<div class="lastcomposition__video">[YouTube embed]</div>
 					</div>
 				</section>
-				<section data-fls-homemassmedia="" class="page__massmedia massmedia-page">
+				<section data-fls-homescores="" data-fls-watcher="" class="page__homescores homescores">
+					<div class="homescores__container">
+						<div class="homescores__headline-block">
+							<h2 class="homescores__headline">Featured Scores</h2>
+						</div>
+						<div class="homescores__items">
+							<div class="homescores__item">
+								<div class="homescores__image">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/scores/score-1-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/scores/score-1-1200.webp" type="image/webp">
+										<img alt="Sheet music close-up" loading="lazy" src="./assets/img/scores/score-1.webp">
+									</picture>
+								</div>
+								<div class="homescores__content">
+									<a href="scores.html" class="homescores__title">Symphony No. 1 in D Minor</a>
+									<div class="homescores__price">$24.99</div>
+									<a href="scores.html" class="homescores__buy button button--dark-grey button--radius">Buy</a>
+								</div>
+							</div>
+							<div class="homescores__item">
+								<div class="homescores__image">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/scores/score-2-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/scores/score-2-1200.webp" type="image/webp">
+										<img alt="Sheet music notation" loading="lazy" src="./assets/img/scores/score-2.webp">
+									</picture>
+								</div>
+								<div class="homescores__content">
+									<a href="scores.html" class="homescores__title">Nocturne for Piano and Strings</a>
+									<div class="homescores__price">$12.99</div>
+									<a href="scores.html" class="homescores__buy button button--dark-grey button--radius">Buy</a>
+								</div>
+							</div>
+						</div>
+						<a href="scores.html" class="homescores__more button button--dark-grey button--radius">Shop Scores</a>
+					</div>
+				</section>
+				<section data-fls-homeperformances="" data-fls-watcher="" class="page__homeperformances homeperformances">
+					<div class="homeperformances__container">
+						<div class="homeperformances__headline-block">
+							<h2 class="homeperformances__headline">Upcoming Performances</h2>
+						</div>
+						<div class="homeperformances__items">
+							<div class="homeperformances__item">
+								<div class="homeperformances__date">[Date]</div>
+								<div class="homeperformances__info">
+									<div class="homeperformances__venue">[Venue Name]</div>
+									<div class="homeperformances__location">[City, Country]</div>
+								</div>
+							</div>
+							<div class="homeperformances__item">
+								<div class="homeperformances__date">[Date]</div>
+								<div class="homeperformances__info">
+									<div class="homeperformances__venue">[Venue Name]</div>
+									<div class="homeperformances__location">[City, Country]</div>
+								</div>
+							</div>
+							<div class="homeperformances__item">
+								<div class="homeperformances__date">[Date]</div>
+								<div class="homeperformances__info">
+									<div class="homeperformances__venue">[Venue Name]</div>
+									<div class="homeperformances__location">[City, Country]</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-fls-homemassmedia="" data-fls-watcher="" class="page__massmedia massmedia-page">
 					<div class="massmedia-page__container">
 						<div class="massmedia-page__headline-block">
 							<h2 class="massmedia-page__headline">Mass Media</h2>
@@ -199,7 +271,31 @@
 						</div>
 					</div>
 				</section>
-				<section data-fls-blogsection="" class="page__blog blog-page">
+				<section data-fls-homepress="" data-fls-watcher="" class="page__homepress homepress">
+					<div class="homepress__container">
+						<div class="homepress__items">
+							<div class="homepress__item">
+								<p class="homepress__quote">
+									&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;
+								</p>
+								<div class="homepress__source">[Publication Name]</div>
+							</div>
+							<div class="homepress__item">
+								<p class="homepress__quote">
+									&ldquo;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&rdquo;
+								</p>
+								<div class="homepress__source">[Publication Name]</div>
+							</div>
+							<div class="homepress__item">
+								<p class="homepress__quote">
+									&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&rdquo;
+								</p>
+								<div class="homepress__source">[Publication Name]</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-fls-blogsection="" data-fls-watcher="" class="page__blog blog-page">
 					<div class="blog-page__container">
 						<div class="blog-page__headline-block">
 							<h2 class="blog-page__headline">Blog</h2>
